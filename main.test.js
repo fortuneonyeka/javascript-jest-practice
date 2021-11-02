@@ -84,3 +84,17 @@ describe('calculator', () => {
     })
 })
 })
+
+describe('capitalizeString', () => {
+  test('return capitalized string', () => {
+    const str = 'hello';
+    const char = capitalizeString(str);
+    expect(char).toBe('Hello')
+  })
+
+  test('return capitalized string', () => {
+    const str = 'hello';
+    const char = capitalizeString(str);
+    expect(char).not.toBe('hello')
+  })
+})
