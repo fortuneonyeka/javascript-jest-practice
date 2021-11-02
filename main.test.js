@@ -97,4 +97,9 @@ describe('capitalizeString', () => {
     const char = capitalizeString(str);
     expect(char).not.toBe('hello')
   })
+  test('capitalize a string with leading spaces', () => {
+    const str = 'string   ';
+    const char = capitalizeString(str);
+    expect(char).toBe('String   ');
+  });
 })
