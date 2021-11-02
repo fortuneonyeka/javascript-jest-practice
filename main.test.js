@@ -1,5 +1,5 @@
 
-import { stringLength} from './main';
+import { stringLength,reverseString,calculator,capitalizeString} from './main';
 
 
 describe('stringLength', () => {
@@ -17,5 +17,19 @@ describe('stringLength', () => {
   test('throws an error when the string length is above 10', () => {
     const str = 'abcdefghijklmn';
     expect(() => stringLength(str)).toThrow(`string length is outside range`)
+  })
+})
+
+
+describe('reverseString', () => {
+  test('reverses string', () => {
+    const str = 'microverse'
+    const char = reverseString(str)
+    expect(char).toBe('esrevorcim')
+  })
+
+  test('reverse a palindrom', () => {
+    const palindrom = 'racecar';
+    expect(reverseString(palindrom)).toBe(palindrom)
   })
 })
