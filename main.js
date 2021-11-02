@@ -21,3 +21,7 @@ export const calculator = {
   subtract: (x,y) => x - y,
   divide: (x,y) => x / y,
 }
+
+export const capitalizeString = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
