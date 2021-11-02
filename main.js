@@ -4,6 +4,6 @@ export const stringLength = (string) => {
   char.forEach(() => {
     count += 1;
   });
-  if (count === 0 || count > 10) throw new Error(`string length is outside range`)
+  if (count < 1 || count > 10) throw new Error(`string length is outside range`)
   return count
 }
